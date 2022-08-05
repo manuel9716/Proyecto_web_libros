@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nuevo libro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="container p-4">
+        <form method="POST" action="/new-book" class="card card-body"> <!--target es para que se muestre en una nueva ventana-->
+            <div class="formgrup">
+                <label for="tittle">tittle</label>
+            <input type="text" class="form-control" name="tittle" id="tittle" placeholder="ingresa un nuevo titulo" autofocus required>
+            </div>
+            <div class="formgrup">
+                <label for="autor">autor</label>
+            <input type="text" class="form-control" name="autor" id="autor" placeholder="ingresa un autor" required>
+            </div>
+            <div class="formgrup">
+                <label for="imagen">imagen</label>
+            <input type="text" class="form-control" name="image" id="image" placeholder="http://website.com" required>
+            </div>
+            <div class="form-grup">
+                <label for="description">Descripcion</label>
+                <textarea name="description" id="description" cols="30" rows="2" class="form-control"  required></textarea>
+            </div>
+            <input type="submit" value="Save book" class="btn-btn-primary">
+        </form>
+    </div>
+</body>
+</html>
